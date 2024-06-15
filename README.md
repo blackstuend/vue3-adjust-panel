@@ -5,7 +5,8 @@
 ![Demo Animation](./demo-1.gif)
 ![Demo Animation](./demo-2.gif)
 
-[Demo]()
+[Demo](https://blackstuend.github.io/vue3-adjust-panel/)
+[source](https://github.com/blackstuend/vue3-adjust-panel/blob/main/src/App.vue)
 
 ## Install
 
