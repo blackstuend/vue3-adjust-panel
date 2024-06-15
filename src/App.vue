@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { DragResizeDirection, useAdjustSize } from '../packages/useAdjustSize.ts';
+import { DragResizeDirection, useAdjustPanel } from '../packages/useAdjustPanel.ts';
 
 const demoXRef1 = ref<HTMLElement | null>(null);
 const demoXRef2 = ref<HTMLElement | null>(null);
 
-useAdjustSize(demoXRef1, {
+useAdjustPanel(demoXRef1, {
   directions: DragResizeDirection.Right,
   persist: true,
   persistKey: 'resize-demo-x-1',
@@ -14,7 +14,7 @@ useAdjustSize(demoXRef1, {
   defaultWidth: 350,
 })
 
-useAdjustSize(demoXRef2, {
+useAdjustPanel(demoXRef2, {
   directions: DragResizeDirection.Left,
   persist: true,
   persistKey: 'resize-demo-x-2',
@@ -26,7 +26,7 @@ useAdjustSize(demoXRef2, {
 const demoRef3 = ref<HTMLElement | null>(null);
 const demoRef4 = ref<HTMLElement | null>(null);
 
-useAdjustSize(demoRef3, {
+useAdjustPanel(demoRef3, {
   directions: DragResizeDirection.Bottom,
   persist: true,
   persistKey: 'resize-demo-y-1',
@@ -35,7 +35,7 @@ useAdjustSize(demoRef3, {
   defaultHeight: 200,
 })
 
-useAdjustSize(demoRef4, {
+useAdjustPanel(demoRef4, {
   directions: DragResizeDirection.Top,
   persist: true,
   persistKey: 'resize-demo-y-2',
@@ -88,7 +88,7 @@ useAdjustSize(demoRef4, {
 }
 
 .demo-area-x {
-  width: 100%;
+  width: 1000px;
   height: 500px;
   display: flex;
   margin-top: 20px;

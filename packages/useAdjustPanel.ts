@@ -36,7 +36,7 @@ export interface AdjustSizeOptions {
   position?: MaybeRefOrGetter<"absolute" | "relative" | "fixed" | "sticky">;
 }
 
-export const useAdjustSize = (
+export const useAdjustPanel = (
   target: MaybeRefOrGetter<HTMLElement | null | undefined>,
   options: AdjustSizeOptions
 ) => {

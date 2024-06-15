@@ -80,7 +80,7 @@ export interface AdjustSizeOptions {
  * @param target The target element to be resized.
  * @param options Options for adjusting the size.
  */
-export declare const useAdjustSize: (
+export declare const useAdjustPanel: (
   target: MaybeRefOrGetter<HTMLElement | null | undefined>,
   options: AdjustSizeOptions
 ) => void;

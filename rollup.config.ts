@@ -4,7 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
 const config: RollupOptions = {
-  input: "packages/useAdjustSize.ts", // 你的入口文件路径
+  input: "packages/useAdjustPanel.ts", // 你的入口文件路径
   output: [
     {
       file: "dist/index.cjs.js",

@@ -1,5 +1,5 @@
 {
-  "name": "vue3-adjust-size",
+  "name": "vue3-adjust-panel",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -16,6 +16,7 @@
   "main": "./dist/index.esm.js",
   "exports": {
     ".": {
+      "types": "./index.d.ts",
       "import": "./dist/index.esm.js",
       "require": "./dist/index.cjs.js"
     }
@@ -35,5 +36,6 @@
     "typescript": "^5.4.5",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
-  }
+  },
+  "license": "MIT"
 }
