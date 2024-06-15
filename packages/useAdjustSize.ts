@@ -1,4 +1,4 @@
-import { useElementSize, useEventListener } from "@vueuse/core";
+import { useElementSize } from "@vueuse/core";
 import { MaybeRefOrGetter, watch, toValue, onMounted, isRef } from "vue";
 
 export const virtualBarDataDirectionKey = "data-adjust-resize-direction";
@@ -145,7 +145,7 @@ export const useAdjustSize = (
 
       barList.push(bar);
 
-      useEventListener(bar, "mousedown", handleMouseDown);
+      bar.addEventListener("mousedown", handleMouseDown);
     }
 
     if (
@@ -160,8 +160,7 @@ export const useAdjustSize = (
       bar.style.top = "0";
 
       el.appendChild(bar);
-
-      useEventListener(bar, "mousedown", handleMouseDown);
+      bar.addEventListener("mousedown", handleMouseDown);
     }
 
     if (
@@ -178,8 +177,7 @@ export const useAdjustSize = (
       el.appendChild(bar);
 
       barList.push(bar);
-
-      useEventListener(bar, "mousedown", handleMouseDown);
+      bar.addEventListener("mousedown", handleMouseDown);
     }
 
     if (
@@ -196,8 +194,7 @@ export const useAdjustSize = (
       el.appendChild(bar);
 
       barList.push(bar);
-
-      useEventListener(bar, "mousedown", handleMouseDown);
+      bar.addEventListener("mousedown", handleMouseDown);
     }
   }
 
