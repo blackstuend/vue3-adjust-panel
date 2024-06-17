@@ -1,6 +1,6 @@
 {
   "name": "vue3-adjust-panel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,5 +37,9 @@
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.6"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackstuend/vue3-adjust-panel"
+  }
 }
