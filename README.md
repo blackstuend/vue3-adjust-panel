@@ -11,7 +11,7 @@
 ## Install
 
 ```bash
-$ npm install vue3-adjust-size
+$ npm install vue3-adjust-panel
 ```
 
 ## Usage

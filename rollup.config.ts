@@ -15,7 +15,18 @@ const config: RollupOptions = {
       format: "esm",
     },
   ],
-  plugins: [typescript(), resolve(), commonjs()],
+  plugins: [typescript({
+    useTsconfigDeclarationDir: true,
+    tsconfigOverride: {
+      compilerOptions: {
+        declaration: true,
+        declarationDir: "dist/types",
+      },
+      },
+    }),
+    resolve(),
+    commonjs(),
+  ],
   external: ["vue"],
 };
 
